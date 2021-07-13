@@ -108,10 +108,10 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print("Most common journey start point: ", df['Start Station'].mode()[0])
+    print("Most used journey start point: ", df['Start Station'].mode()[0])
 
     # TO DO: display most commonly used end station
-    print("Most common journey end point: ", df['End Station'].mode()[0])
+    print("Most used journey end point: ", df['End Station'].mode()[0])
 
     # TO DO: display most frequent combination of start station and end station trip
     print("Most common journey: ", df['station_combo'].mode()[0])
@@ -164,7 +164,7 @@ def print_data(df):
 
     start_loc = 0
     end_loc = start_loc + 5
-    view_data = input("would you like to view 5 rows of data? Please enter yes or no")
+    view_data = input("would you like to check 5 rows of data? Please enter yes or no")
 
     while view_data == "yes":
         print(df[start_loc:end_loc])
@@ -184,7 +184,7 @@ def main():
         user_stats(df)
         print_data(df)
 
-        restart = input('\nDid you enjoy this? Would you like to restart? Enter yes or no.\n')
+        restart = input('\nDid you enjoy this? Would you like to restart? Enter yes love to or no thanks all done.\n')
         if restart.lower() != 'yes':
             break
 
