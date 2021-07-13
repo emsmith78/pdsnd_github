@@ -14,7 +14,7 @@ def get_filters():
         (str) city - name of the city to analyze
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Cycles through until the user inputs a correct City, caters for typos    
+    Cycles through until the user inputs a correct City, caters for typos
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
@@ -107,10 +107,10 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    print("Most common journey start point: ", df['Start Station'].mode()[0])
+    print("Most used journey start point: ", df['Start Station'].mode()[0])
 
     # TO DO: display most commonly used end station
-    print("Most common journey end point: ", df['End Station'].mode()[0])
+    print("Most used journey end point: ", df['End Station'].mode()[0])
 
     # TO DO: display most frequent combination of start station and end station trip
     print("Most common journey: ", df['station_combo'].mode()[0])
@@ -163,7 +163,7 @@ def print_data(df):
 
     start_loc = 0
     end_loc = start_loc + 5
-    view_data = input("would you like to view 5 rows of data? Please enter yes or no")
+    view_data = input("would you like to check 5 rows of data? Please enter yes or no")
 
     while view_data == "yes":
         print(df[start_loc:end_loc])
