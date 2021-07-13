@@ -10,6 +10,7 @@ README.md created 13th July
 ### Description
 Interactive programmed to analyse how citizens are using the bikeshare scheme across 3 major Cities.
 Provides time, frequency and usage stats for New York, Washington and Chicago.
+Safety built in to allow for incorrect input and typos, different case types
 
 ### Files used
 bikeshare.py
